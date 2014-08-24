@@ -15,7 +15,7 @@ Additionally create a code book describing the variables for the tidy variables 
 
 ##Operation Overview
 The analysis script is **run_analysis.R**.  
-the script reads the *Samsung* data files and produces a tidy dataset of the means and standard deviations from the *Samsung* data, an output file with average values of the tidy dataset as well as a code book for the data in the tidy dataset.
+The script reads the *Samsung* data files and produces a tidy dataset of the means and standard deviations from the *Samsung* data by subject and activity (*GandCD_Project.txt*). It also produces a code book for tidy dataset (*codebook.txt*).
 
 ##Operation details.
 1. Read in *features.txt* with the names of the 561 feature variables in the test and training data files.
@@ -44,7 +44,7 @@ The required input files are:
 
 ###Outputs
 The output generated is 
-* Output tidy dataset as text file *GandCD_Project.txt* containing the averages of the variables in *meanstd*
+* Output tidy dataset as text file *GandCD_Project.txt* containing the averages of the mean and standard deviation data by subject and activity
 * Code book of the variables in output tidy dataset called *codebook.txt*
 
 
