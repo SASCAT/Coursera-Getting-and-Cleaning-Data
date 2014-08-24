@@ -1,10 +1,8 @@
-GandCD_Project
-==============
+#GandCD_Project
 
 Project for the Getting and Cleaning Data course
 
-Objectives 
-----------
+##Objectives 
 You should create one R script called run_analysis.R that does the following. 
 
 1. Merges the training and the test sets to create one data set.
@@ -15,12 +13,24 @@ You should create one R script called run_analysis.R that does the following.
 
 Additionally create a code book describing the variables for the tidy variables in the tidy dataset. 
 
-Operation
----------
-
+##Operation Overview
 The analysis script is **run_analysis.R**.  
 the script reads the *Samsung* data files and produces a tidy dataset of the means and standard deviations from the *Samsung* data, an output file with average values of the tidy dataset as well as a code book for the data in the tidy dataset.
 
+##Operation details.
+1. Read in *features.txt* with the names of the 561 feature variables in the test and training data files.
+2. For the test data, read in the test data from *X_test.txt" and merge in the subject identifiers from *subject_test.txt* and the activity codes from *y_test.txt*
+3. For the training data, read in the training data from *X_train.txt" and merge in the subject identifiers from *subject_train.txt* and the activity codes from *y_train.txt*
+4. Append the training to the test data frame.
+5. Apply the names from *features.txt* to the data in the combined data.
+6. Replace the activity codes with their full names.  The names are defined in *activity_labels.txt*
+7. Select the ID columns for the subjects and activities and the data columns for mean and standard deviation.  The mean columns are identified by having names containing "mean()" and the standard deviation columns are identified by having names containing "std()"
+8. Calculate the mean values for the data for each subject and activity. this will be the data frame used for the final tidy dataset.
+9. Output the tidy data to *GandCD_Project.txt*
+10. Create a code book called *codebook.txt* for the data in *GandCD_Project.txt* 
+
+
+###Inputs
 The analysis script requires that the Samsung data is in the working directory for the script.  
 The required input files are:
 * features.txt
@@ -32,14 +42,9 @@ The required input files are:
 * y_train.txt
 * activity_labels.txt
 
+###Outputs
 The output generated is 
-* Tidy data as a R data frame called *Samsung_meanstd*.
-* Output text file outtab.txt containing the averages of the variables in *Samsung_meanstd*
-* Code book of the variables in *Samsung_meanstd* as a mark down file called code_book.md
-
-
-
-
-
+* Output tidy dataset as text file *GandCD_Project.txt* containing the averages of the variables in *meanstd*
+* Code book of the variables in output tidy dataset called *codebook.txt*
 
 
