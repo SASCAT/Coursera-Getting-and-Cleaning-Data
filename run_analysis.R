@@ -1,3 +1,15 @@
+## Getting and Cleaning Data Project
+##
+## Jeff Tomlinsn - August 2014
+##
+## This script reads the Samsung data for both training and test, 
+## add the description of the variables and merges the subject 
+## identifiers and activity codes.
+## From this data, the variables for mean and standard deviation are
+## kept and are averaged for each patient and activity.  
+## An output "tidy" file is produced from this, as well as a code
+## book describing the variables in the output file.
+
 # Step 1
 # Merges the training and the test sets to create one data set.
 
@@ -66,4 +78,49 @@ names(outtab) <- paste("Average", names(outtab), sep=" ")
 names(outtab)[1:2] <- c("subject", "activity")
 
 # Output the averages 
-write.table(outtab, "./outtab.txt", row.names=FALSE)
+write.table(outtab, "./GandCD_Project.txt", row.names=FALSE)
+
+# Create the codebook.
+
+sink("./codebook.txt")
+cat("Code Book for Getting and Cleaning Data Project\n\nFile:GandCD_Project.txt\n\n")
+
+# ... Subject
+cat(names(outtab)[1],"\n")
+cat("    Type:", class(outtab[,1]),"\n")
+cat("    Description: Subject identifier\n")
+cat("    Range:",min(outtab$subject),"to",max(outtab$subject),"\n\n")
+
+# ... Activities
+cat(names(outtab[2]),"\n")
+cat("    Type:", class(outtab[,2])
+    ,"as character, with a maximum length of"
+    ,max(nchar(as.character(activityLabels[,2]))),"characters\n")
+cat("    Description: Activity type\n    Values:\n")
+for (j in 1:nrow(activityLabels)){
+  cat("        ",as.character(activityLabels[j,2]),"\n")
+}
+cat("\n")
+
+# ... the numeric variables.
+for (i in 3:ncol(outtab)) {
+  cat(names(outtab)[i],"\n")
+  cat("    Type:", class(outtab[,i]),"\n")
+  lns <- strsplit(names(outtab)[i],"-")
+  lnst <- lns[[1]][2]
+  mors <- gsub("Average ","",lns[[1]][1])
+  axis <- lns[[1]][3]
+  if (lnst == "mean()") {lnst <- "mean"
+  } else if (lnst == "std()") {lnst <- "standard deviation"
+  } else {lnst = "????"}
+  
+  if (is.na(axis)) {
+    cat("    Description: Average of the",lnst,"of",mors,"\n")    
+  } else {
+    cat("    Description: Average of the",lnst,"of",mors,"for the",axis,"axis.\n")
+  }
+  cat("    Range:",min(outtab[,i]),"to",max(outtab[,i]),"\n\n")
+}
+sink()
+
+
