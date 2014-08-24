@@ -1,4 +1,6 @@
-Code Book for Getting and Cleaning Data - File:GandCD_Project.txt
+Code Book for Getting and Cleaning Data Project
+
+File:GandCD_Project.txt
 
 subject 
     Type: integer 
