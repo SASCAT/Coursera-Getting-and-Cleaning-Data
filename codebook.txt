@@ -1,0 +1,348 @@
+Code Book for Getting and Cleaning Data - File:GandCD_Project.txt
+
+subject 
+    Type: integer 
+    Description: Subject identifier
+    Range: 1 to 30 
+
+activity 
+    Type: factor as character, with a maximum length of 18 characters
+    Description: Activity type
+    Values:
+         WALKING 
+         WALKING_UPSTAIRS 
+         WALKING_DOWNSTAIRS 
+         SITTING 
+         STANDING 
+         LAYING 
+
+Average tBodyAcc-mean()-X 
+    Type: numeric 
+    Description: Average of the mean of tBodyAcc for the X axis.
+    Range: 0.2215982 to 0.301461 
+
+Average tBodyAcc-mean()-Y 
+    Type: numeric 
+    Description: Average of the mean of tBodyAcc for the Y axis.
+    Range: -0.04051395 to -0.001308288 
+
+Average tBodyAcc-mean()-Z 
+    Type: numeric 
+    Description: Average of the mean of tBodyAcc for the Z axis.
+    Range: -0.1525139 to -0.07537847 
+
+Average tBodyAcc-std()-X 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyAcc for the X axis.
+    Range: -0.9960686 to 0.6269171 
+
+Average tBodyAcc-std()-Y 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyAcc for the Y axis.
+    Range: -0.9902409 to 0.616937 
+
+Average tBodyAcc-std()-Z 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyAcc for the Z axis.
+    Range: -0.9876587 to 0.6090179 
+
+Average tGravityAcc-mean()-X 
+    Type: numeric 
+    Description: Average of the mean of tGravityAcc for the X axis.
+    Range: -0.6800432 to 0.9745087 
+
+Average tGravityAcc-mean()-Y 
+    Type: numeric 
+    Description: Average of the mean of tGravityAcc for the Y axis.
+    Range: -0.4798948 to 0.9565938 
+
+Average tGravityAcc-mean()-Z 
+    Type: numeric 
+    Description: Average of the mean of tGravityAcc for the Z axis.
+    Range: -0.4950887 to 0.957873 
+
+Average tGravityAcc-std()-X 
+    Type: numeric 
+    Description: Average of the standard deviation of tGravityAcc for the X axis.
+    Range: -0.9967642 to -0.8295549 
+
+Average tGravityAcc-std()-Y 
+    Type: numeric 
+    Description: Average of the standard deviation of tGravityAcc for the Y axis.
+    Range: -0.9942476 to -0.6435784 
+
+Average tGravityAcc-std()-Z 
+    Type: numeric 
+    Description: Average of the standard deviation of tGravityAcc for the Z axis.
+    Range: -0.9909572 to -0.6101612 
+
+Average tBodyAccJerk-mean()-X 
+    Type: numeric 
+    Description: Average of the mean of tBodyAccJerk for the X axis.
+    Range: 0.0426881 to 0.130193 
+
+Average tBodyAccJerk-mean()-Y 
+    Type: numeric 
+    Description: Average of the mean of tBodyAccJerk for the Y axis.
+    Range: -0.03868721 to 0.05681859 
+
+Average tBodyAccJerk-mean()-Z 
+    Type: numeric 
+    Description: Average of the mean of tBodyAccJerk for the Z axis.
+    Range: -0.06745839 to 0.03805336 
+
+Average tBodyAccJerk-std()-X 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyAccJerk for the X axis.
+    Range: -0.9946045 to 0.544273 
+
+Average tBodyAccJerk-std()-Y 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyAccJerk for the Y axis.
+    Range: -0.9895136 to 0.3553067 
+
+Average tBodyAccJerk-std()-Z 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyAccJerk for the Z axis.
+    Range: -0.9932883 to 0.03101571 
+
+Average tBodyGyro-mean()-X 
+    Type: numeric 
+    Description: Average of the mean of tBodyGyro for the X axis.
+    Range: -0.2057754 to 0.1927045 
+
+Average tBodyGyro-mean()-Y 
+    Type: numeric 
+    Description: Average of the mean of tBodyGyro for the Y axis.
+    Range: -0.2042054 to 0.02747076 
+
+Average tBodyGyro-mean()-Z 
+    Type: numeric 
+    Description: Average of the mean of tBodyGyro for the Z axis.
+    Range: -0.0724546 to 0.1791021 
+
+Average tBodyGyro-std()-X 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyGyro for the X axis.
+    Range: -0.9942766 to 0.2676572 
+
+Average tBodyGyro-std()-Y 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyGyro for the Y axis.
+    Range: -0.9942105 to 0.4765187 
+
+Average tBodyGyro-std()-Z 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyGyro for the Z axis.
+    Range: -0.9855384 to 0.5648758 
+
+Average tBodyGyroJerk-mean()-X 
+    Type: numeric 
+    Description: Average of the mean of tBodyGyroJerk for the X axis.
+    Range: -0.1572125 to -0.02209163 
+
+Average tBodyGyroJerk-mean()-Y 
+    Type: numeric 
+    Description: Average of the mean of tBodyGyroJerk for the Y axis.
+    Range: -0.07680899 to -0.01320228 
+
+Average tBodyGyroJerk-mean()-Z 
+    Type: numeric 
+    Description: Average of the mean of tBodyGyroJerk for the Z axis.
+    Range: -0.09249985 to -0.006940664 
+
+Average tBodyGyroJerk-std()-X 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyGyroJerk for the X axis.
+    Range: -0.9965425 to 0.1791486 
+
+Average tBodyGyroJerk-std()-Y 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyGyroJerk for the Y axis.
+    Range: -0.9970816 to 0.2959459 
+
+Average tBodyGyroJerk-std()-Z 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyGyroJerk for the Z axis.
+    Range: -0.9953808 to 0.1932065 
+
+Average tBodyAccMag-mean() 
+    Type: numeric 
+    Description: Average of the mean of tBodyAccMag 
+    Range: -0.9864932 to 0.6446043 
+
+Average tBodyAccMag-std() 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyAccMag 
+    Range: -0.9864645 to 0.4284059 
+
+Average tGravityAccMag-mean() 
+    Type: numeric 
+    Description: Average of the mean of tGravityAccMag 
+    Range: -0.9864932 to 0.6446043 
+
+Average tGravityAccMag-std() 
+    Type: numeric 
+    Description: Average of the standard deviation of tGravityAccMag 
+    Range: -0.9864645 to 0.4284059 
+
+Average tBodyAccJerkMag-mean() 
+    Type: numeric 
+    Description: Average of the mean of tBodyAccJerkMag 
+    Range: -0.9928147 to 0.4344904 
+
+Average tBodyAccJerkMag-std() 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyAccJerkMag 
+    Range: -0.9946469 to 0.4506121 
+
+Average tBodyGyroMag-mean() 
+    Type: numeric 
+    Description: Average of the mean of tBodyGyroMag 
+    Range: -0.9807408 to 0.4180046 
+
+Average tBodyGyroMag-std() 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyGyroMag 
+    Range: -0.9813727 to 0.299976 
+
+Average tBodyGyroJerkMag-mean() 
+    Type: numeric 
+    Description: Average of the mean of tBodyGyroJerkMag 
+    Range: -0.9973225 to 0.08758166 
+
+Average tBodyGyroJerkMag-std() 
+    Type: numeric 
+    Description: Average of the standard deviation of tBodyGyroJerkMag 
+    Range: -0.9976661 to 0.2501732 
+
+Average fBodyAcc-mean()-X 
+    Type: numeric 
+    Description: Average of the mean of fBodyAcc for the X axis.
+    Range: -0.9952499 to 0.537012 
+
+Average fBodyAcc-mean()-Y 
+    Type: numeric 
+    Description: Average of the mean of fBodyAcc for the Y axis.
+    Range: -0.9890343 to 0.5241877 
+
+Average fBodyAcc-mean()-Z 
+    Type: numeric 
+    Description: Average of the mean of fBodyAcc for the Z axis.
+    Range: -0.9894739 to 0.280736 
+
+Average fBodyAcc-std()-X 
+    Type: numeric 
+    Description: Average of the standard deviation of fBodyAcc for the X axis.
+    Range: -0.9966046 to 0.6585065 
+
+Average fBodyAcc-std()-Y 
+    Type: numeric 
+    Description: Average of the standard deviation of fBodyAcc for the Y axis.
+    Range: -0.9906804 to 0.5601913 
+
+Average fBodyAcc-std()-Z 
+    Type: numeric 
+    Description: Average of the standard deviation of fBodyAcc for the Z axis.
+    Range: -0.9872248 to 0.6871242 
+
+Average fBodyAccJerk-mean()-X 
+    Type: numeric 
+    Description: Average of the mean of fBodyAccJerk for the X axis.
+    Range: -0.9946308 to 0.4743173 
+
+Average fBodyAccJerk-mean()-Y 
+    Type: numeric 
+    Description: Average of the mean of fBodyAccJerk for the Y axis.
+    Range: -0.9893988 to 0.2767169 
+
+Average fBodyAccJerk-mean()-Z 
+    Type: numeric 
+    Description: Average of the mean of fBodyAccJerk for the Z axis.
+    Range: -0.9920184 to 0.1577757 
+
+Average fBodyAccJerk-std()-X 
+    Type: numeric 
+    Description: Average of the standard deviation of fBodyAccJerk for the X axis.
+    Range: -0.9950738 to 0.4768039 
+
+Average fBodyAccJerk-std()-Y 
+    Type: numeric 
+    Description: Average of the standard deviation of fBodyAccJerk for the Y axis.
+    Range: -0.9904681 to 0.3497713 
+
+Average fBodyAccJerk-std()-Z 
+    Type: numeric 
+    Description: Average of the standard deviation of fBodyAccJerk for the Z axis.
+    Range: -0.9931078 to -0.006236475 
+
+Average fBodyGyro-mean()-X 
+    Type: numeric 
+    Description: Average of the mean of fBodyGyro for the X axis.
+    Range: -0.9931226 to 0.4749624 
+
+Average fBodyGyro-mean()-Y 
+    Type: numeric 
+    Description: Average of the mean of fBodyGyro for the Y axis.
+    Range: -0.9940255 to 0.328817 
+
+Average fBodyGyro-mean()-Z 
+    Type: numeric 
+    Description: Average of the mean of fBodyGyro for the Z axis.
+    Range: -0.9859578 to 0.4924144 
+
+Average fBodyGyro-std()-X 
+    Type: numeric 
+    Description: Average of the standard deviation of fBodyGyro for the X axis.
+    Range: -0.9946522 to 0.1966133 
+
+Average fBodyGyro-std()-Y 
+    Type: numeric 
+    Description: Average of the standard deviation of fBodyGyro for the Y axis.
+    Range: -0.9943531 to 0.6462336 
+
+Average fBodyGyro-std()-Z 
+    Type: numeric 
+    Description: Average of the standard deviation of fBodyGyro for the Z axis.
+    Range: -0.9867253 to 0.5224542 
+
+Average fBodyAccMag-mean() 
+    Type: numeric 
+    Description: Average of the mean of fBodyAccMag 
+    Range: -0.9868006 to 0.5866376 
+
+Average fBodyAccMag-std() 
+    Type: numeric 
+    Description: Average of the standard deviation of fBodyAccMag 
+    Range: -0.9876485 to 0.1786846 
+
+Average fBodyBodyAccJerkMag-mean() 
+    Type: numeric 
+    Description: Average of the mean of fBodyBodyAccJerkMag 
+    Range: -0.9939983 to 0.5384048 
+
+Average fBodyBodyAccJerkMag-std() 
+    Type: numeric 
+    Description: Average of the standard deviation of fBodyBodyAccJerkMag 
+    Range: -0.9943667 to 0.3163464 
+
+Average fBodyBodyGyroMag-mean() 
+    Type: numeric 
+    Description: Average of the mean of fBodyBodyGyroMag 
+    Range: -0.9865352 to 0.2039798 
+
+Average fBodyBodyGyroMag-std() 
+    Type: numeric 
+    Description: Average of the standard deviation of fBodyBodyGyroMag 
+    Range: -0.9814688 to 0.2366597 
+
+Average fBodyBodyGyroJerkMag-mean() 
+    Type: numeric 
+    Description: Average of the mean of fBodyBodyGyroJerkMag 
+    Range: -0.9976174 to 0.1466186 
+
+Average fBodyBodyGyroJerkMag-std() 
+    Type: numeric 
+    Description: Average of the standard deviation of fBodyBodyGyroJerkMag 
+    Range: -0.9975852 to 0.2878346 
+
