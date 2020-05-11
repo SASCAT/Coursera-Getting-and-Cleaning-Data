@@ -19,8 +19,8 @@ The script reads the *Samsung* data files and produces a tidy dataset of the mea
 
 ## Operation details.
 1. Read in *features.txt* with the names of the 561 feature variables in the test and training data files.
-2. For the test data, read in the test data from *X_test.txt" and merge in the subject identifiers from *subject_test.txt* and the activity codes from *y_test.txt*
-3. For the training data, read in the training data from *X_train.txt" and merge in the subject identifiers from *subject_train.txt* and the activity codes from *y_train.txt*
+2. For the test data, read in the test data from *X_test.txt* and merge in the subject identifiers from *subject_test.txt* and the activity codes from *y_test.txt*
+3. For the training data, read in the training data from *X_train.txt* and merge in the subject identifiers from *subject_train.txt* and the activity codes from *y_train.txt*
 4. Append the training to the test data frame.
 5. Apply the names from *features.txt* to the data in the combined data.
 6. Replace the activity codes with their full names.  The names are defined in *activity_labels.txt*
